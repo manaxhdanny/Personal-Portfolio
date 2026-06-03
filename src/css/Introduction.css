@@ -1,0 +1,120 @@
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+}
+
+.intro-job-role {
+    color: #FFFF33;
+    font-family: "Speedy";
+    font-size: 2.6vw;
+    line-height: 1.1em;
+    text-shadow: 0 2px 2px sienna, 0 6px 6px darkred;
+}
+
+.intro-location {
+    color: white;
+    font-family: "Speedy";
+    font-size: 1.7vw;
+    text-shadow: 0 3px 3px #660000, 0 6px 6px #660000;
+    -webkit-text-stroke: 0.5px #660000;
+}
+
+.intro-text {
+    align-self: flex-start;
+    font-family: var(--secondary-font);
+    margin-top: 20vh;
+    max-height: 100%;
+    text-align: left;
+    width: 100%;
+}
+
+.intro-title {
+    color: orange;
+    font-family: "Astro";
+    font-size: 5.2vw;
+    line-height: 0.33em;
+    margin-left: 8vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    text-shadow: 0 2px 2px brown, 0 8px 8px darkred;
+    -webkit-text-stroke: 0.5px orangered;
+}
+
+.portrait-wrapper {
+    display: grid;
+    position: relative;
+    width: 100%;
+}
+
+.resume-button {
+    align-items: center;
+    background: linear-gradient(45deg, darkRed, darkOrange);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.8);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 0.9vw;
+    height: 40px;
+    justify-content: center;
+    margin-left: 8vw;
+    width: 14.7vw;
+}
+
+.resume-button:hover {
+    background: linear-gradient(45deg, orangered, darkOrange);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+.self-image {
+    grid-area: 1 / 1;
+    left: 50%;
+    max-width: 75%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -46%);
+}
+
+.socials-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 8vw;
+}
+
+.socials-icons-button-formatting {
+    align-items: center;
+    background: linear-gradient(45deg, darkRed, darkOrange);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    width: 4.26vw;
+}
+
+.socials-icons-button-formatting:hover {
+    background: linear-gradient(45deg, orangered, darkOrange);
+}
+
+.socials-message {
+    font-family: "Speedy";
+    font-size: 1.3vw;
+    line-height: 0;
+    margin-left: 8vw;
+    margin-top: 13vh;
+}
+
+.welcome-message {
+    font-family: 'Speedy';
+    font-size: 1.3vw;
+    line-height: 0;
+    margin-left: 8vw;
+}

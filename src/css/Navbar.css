@@ -1,0 +1,94 @@
+.initials-logo {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 1.17vw;
+    font-style: italic;
+    font-weight: 200;
+    gap: 16px;
+    left: 0;
+    margin-left: 38px;
+    position: absolute;
+    text-shadow: 1px 1px 2px black;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.initialsLogo {
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
+    width: 4.4vw;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1.042vw;
+    font-weight: 500;
+    padding: 8px 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+.nav-btn.active {
+    background: linear-gradient(135deg, darkRed, darkOrange);
+    color: white;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.nav-content {
+    align-items: center;
+    backdrop-filter: blur(14px);    /* glass effect */
+    background: rgba(255, 255, 255, 0.15);  /* translucent white */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: none;
+    border-radius: 24px;
+    border-top: none;
+    display: flex;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
+    gap: 12px;
+    left: 50%;
+    padding: 6px 8px;
+    position: absolute;
+    transform: translateX(-50%);
+    -webkit-backdrop-filter: blur(14px);
+    width: fit-content;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+.navbar-socials {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-socials-icon {
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
+    width: 3.2vw;
+}
+
+.navbar-socials-icon:hover {
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.9));
+}
+
+.navbar-socials-wrapper {
+    margin-right: 4vh;
+    position: absolute;
+    right: 0;
+}

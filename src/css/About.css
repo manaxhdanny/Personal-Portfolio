@@ -1,0 +1,65 @@
+.about-content {
+    align-items: stretch;
+    background-color: black;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 99vw;
+}
+
+.about-img {
+    filter: drop-shadow(1.5vw 3vh 2px white);
+    height: auto;
+    width: 80%;
+}
+
+.about-img-wrapper {
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-info-wrapper {
+    flex: 1;
+    padding-left: 7vh;
+}
+
+.about-me {
+    font-family: var(--main-font);
+    font-size: 1.04vw;
+    font-weight: 400;
+    margin-top: 4vh;
+    text-align: left;
+}
+
+.about-me-opener {
+    font-family: var(--main-font);
+    font-size: 1.55vw;
+    font-weight: 600;
+    margin-top: 10vh;
+    text-align: left;
+}
+
+.about-title {
+    color: white;
+    display: block;
+    font-family: "Speedy";
+    font-size: 6vw;
+    padding-top: 18vh;
+    position: relative;
+    text-align: left;
+    width: fit-content;
+    z-index: 5;
+}
+
+.about-title::after {
+    background-image: linear-gradient(to right, orange, darkred);
+    bottom: -40px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 60vw; /* extend into the image column */
+    z-index: 5;
+}

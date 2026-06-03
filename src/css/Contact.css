@@ -1,0 +1,165 @@
+.contact-btn {
+    align-items: center;
+    background: linear-gradient(45deg, maroon, orangered);
+    border: 1px solid maroon;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 1.1vw;
+    font-weight: 500;
+    height: 40px;
+    justify-content: center;
+    margin-right: 1vw;
+    width: 4vw;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, orangered, orange);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.contact-btn-rows {
+    align-items: center;
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 1.17vw;
+}
+
+.contact-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 3.3vh 5vw;
+}
+
+.contact-content {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.contact-footer {
+    align-items: flex-end;
+    display: flex;
+    flex: 0 0 100%;
+    font-family: var(--main-font);
+    font-size: 1.25vw;
+    height: 6vh;
+    justify-content: center;
+}
+
+.contact-footer-btn {
+    background: transparent;
+    border-color: white;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1vw;
+    font-weight: 500;
+    height: 35px;
+    width: 9vw;
+}
+
+.contact-footer-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+.contact-footer-btn-row {
+    align-items: flex-end;
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: row;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.contact-info {
+    flex: 0 0 40%;
+    padding-top: 14vh;
+}
+
+.contact-message {
+    font-family: var(--main-font);
+    font-size: 1.75vw;
+    font-weight: 500;
+    padding: 0 5vw;
+    padding-top: 3vh;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.contact-title {
+    flex: 0 0 60%;
+    padding-top: 14vh;
+}
+
+.contact-title-1 {
+    font-family: "Speedy";
+    font-size: 10vw;
+    line-height: 1;
+    padding-left: 3vw;
+    text-align: left;
+}
+
+.contact-title-2 {
+    font-family: "Speedy";
+    font-size: 10vw;
+    line-height: 1;
+    text-align: right;
+}
+
+.contact-title-email {
+    align-items: center;
+    background: linear-gradient(to right, orange, darkred);
+    display: flex;
+    font-family: var(--main-font);
+    font-size: 2.2vw;
+    font-weight: 300;
+    justify-content: center;
+    line-height: 1;
+    margin-top: 6vh;
+    padding: 1.5vh 0;
+    position: relative;
+}
+
+.hover-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-right: 3.25vw;
+    padding: 6px 10px;
+    position: absolute;
+    right: 0;
+    transition: opacity .2s;
+    white-space: pre-wrap;
+}
+
+.hover-box:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+.hover-box:hover + .my-email {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1vw;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(255, 255, 255, 0.2);
+    text-underline-offset: 0.4vh;
+}
