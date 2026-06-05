@@ -35,11 +35,12 @@
 
 /* mobile */
 @media (max-width: 480px) {
-  .intro-section {
-    min-height: fit-content;
+  .contact-section {
+    height: auto;
+    min-height: auto;
   }
 
-  .contact-section {
+  .intro-section {
     height: auto;
     min-height: auto;
   }

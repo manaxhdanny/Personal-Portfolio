@@ -148,6 +148,7 @@
 
     .intro-job-role {
         font-size: 23px;
+        line-height: 1.8;
     }
 
     .intro-location {
@@ -167,7 +168,7 @@
     .intro-title {
         font-size: 44px;
         justify-self: center;
-        line-height: 0.45em;
+        line-height: 0.35em;
         margin-left: 0vw;
         padding-bottom: 2.5vh;
         padding-top: 0.5vh;

@@ -64,6 +64,10 @@
     z-index: 5;
 }
 
+.pg-break {
+    margin-top: 3vh;
+}
+
 /* mobile */
 @media (max-width: 600px) {
     .about-dash {
@@ -115,5 +119,9 @@
         background: none;
         width: 0;
         height: 0;
+    }
+
+    .pg-break {
+        margin-top: 12px;
     }
 }

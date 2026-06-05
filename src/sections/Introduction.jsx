@@ -30,8 +30,8 @@ const Introduction = () => {
                     <div className="intro-text">
                         <h5 className="welcome-message">HELLO THERE, MY NAME IS </h5>
                         <div className="intro-title">
-                            <span>DANNY BAO</span><br></br><br></br>
-                            <span className="intro-job-role">Software&nbsp;Developer</span><br></br>
+                            <span>DANNY BAO</span><br/><br/>
+                            <span className="intro-job-role">Software&nbsp;Developer</span><br/>
                             <span className="intro-location">Based in DALLAS, TX</span>
                         </div>
                         <button className="resume-button" onClick={resumeRedirect}>View My Resumé</button>
