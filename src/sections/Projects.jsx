@@ -4,6 +4,11 @@ import ciobrainLogo from '../assets/Project Card Images/CIOBrain.jfif'
 import cometCavesLogo from '../assets/Project Card Images/Comet Caves.jpg'
 import flightsPocketLogo from '../assets/Project Card Images/Flights Pocket.jpg'
 import wiseCursorLogo from '../assets/Project Card Images/WiseCursor.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { useMediaQuery } from 'react-responsive';
 
 const Projects = () => {
     const projects = [
@@ -14,35 +19,78 @@ const Projects = () => {
         { id: 5, title: "CIOBrain Graph Database", image: ciobrainLogo, description: "Undergraduate Capstone Project developed for Fellows Consulting Group. This is a web-based graph database application designed to help CIOs track interconnected IT assets, such as applications, databases, and infrastructure, and visualize the relationships between these assets within their IT environment.", tools: "React, Node.js", date: "Feb 2023 - May 2023", url: "https://github.com/CIOBrain/ciobrain-mono.git" },
         { id: 6, title: "Comet Caves Software Requirements Specification Document", image: cometCavesLogo, description: "A 62-page Requirements Specification Document following the Volere process that details the constraints, functional and non-functional requirements, UML scenario flows, use cases, and full wireframes for the Comet Caves system.", tools: "Requirements Documentation", date: "Feb 2023 - May 2023", url: "https://1drv.ms/b/c/C15BCB72315D9978/IQCEuJiEcrRkT4NO1mkx-S4UAdZv8TWfnu39g283GYCWkdo?e=NY11c7" }
     ];
+    const isMobile = useMediaQuery({ maxWidth: 734 });
     
     return (
         <div className="projects-content">
-            <div className="projects-subtext">Some of my recent works</div><br></br>
+            <div className="projects-subtext">SOME OF MY RECENT WORKS</div><br></br>
             <div className="projects-text">
-                PROJECTS
+                PROJECTS<br/>
+                <div className="projects-dash"></div>
             </div>
-            <div className="projects-grid">
-                {projects.map((p) => (
-                    <a
-                        key={p.id}
-                        href={p.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-card"
-                    >
-                        <div className="project-image">
-                            <img src={p.image} alt={p.title} />
-                        </div>
+            {isMobile ? (
+                <Swiper
+                    modules={[Pagination]}
+                    pagination={{ clickable: true }}
+                    spaceBetween={24}
+                    slidesPerView={1}
+                    centeredSlides={true}
+                    grabCursor={true}
+                    style={{
+                        maxWidth: '260px',
+                        padding: '4px 8px 48px 8px',
+                        "--swiper-pagination-color": "orangered", // active
+                        "--swiper-pagination-bullet-inactive-color": "white", // inactive
+                        "--swiper-pagination-bullet-size": "12px",
+                    }}
+                >
+                    {projects.map((p) => (
+                        <SwiperSlide key={p.id} className="project-card">
+                            <a
+                                href={p.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-card-formatting"
+                            >
+                                <div className="project-image">
+                                <img src={p.image} alt={p.title} />
+                                </div>
 
-                        <h3 className="project-title">{p.title}</h3>
-                        <p className="project-desc">{p.description}</p>
-                        <div className="project-tools-date">
-                            {p.tools}<br></br>
-                            {p.date}
-                        </div>
-                    </a>
-                ))}
-            </div>
+                                <h3 className="project-title">{p.title}</h3>
+                                <p className="project-desc">{p.description}</p>
+
+                                <div className="project-tools-date">
+                                {p.tools}<br />
+                                {p.date}
+                                </div>
+                            </a>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            ) : (
+                <div className="projects-grid">
+                    {projects.map((p) => (
+                        <a
+                            key={p.id}
+                            href={p.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-card"
+                        >
+                            <div className="project-image">
+                                <img src={p.image} alt={p.title} />
+                            </div>
+
+                            <h3 className="project-title">{p.title}</h3>
+                            <p className="project-desc">{p.description}</p>
+                            <div className="project-tools-date">
+                                {p.tools}<br></br>
+                                {p.date}
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            )}
         </div>
     );
 };

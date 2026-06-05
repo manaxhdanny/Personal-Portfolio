@@ -1,3 +1,11 @@
+.discord-image {
+    width: 1.68vw;
+}
+
+.instagram-image {
+    width: 1.3vw;
+}
+
 .intro-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,6 +47,10 @@
     padding-top: 5vh;
     text-shadow: 0 2px 2px brown, 0 8px 8px darkred;
     -webkit-text-stroke: 0.5px orangered;
+}
+
+.linkedIn-image {
+    width: 2.3vw;
 }
 
 .portrait-wrapper {
@@ -117,4 +129,99 @@
     font-size: 1.3vw;
     line-height: 0;
     margin-left: 8vw;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .discord-image {
+        width: 18px;
+    }
+
+    .instagram-image {
+        width: 14px;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-job-role {
+        font-size: 21px;
+    }
+
+    .intro-location {
+        font-size: 16px;
+    }
+
+    .intro-text {
+        flex: 1;
+        margin-top: 0vh;
+    }
+
+    .intro-title {
+        font-size: 44px;
+        justify-self: center;
+        line-height: 0.4em;
+        margin-left: 0vw;
+        padding-bottom: 2.5vh;
+        padding-top: 0.5vh;
+        text-align: center;
+    }
+
+    .linkedIn-image {
+        width: 23px;
+    }
+
+    .portrait-wrapper {
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .resume-button {
+        font-size: 10px;
+        height: 30px;
+        justify-self: center;
+        margin-left: 0vw;
+        width: 144px;
+    }
+
+    .self-image {
+        left: 0%;
+        max-width: 60%;
+        position: static;
+        top: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    .socials-icons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-left: 0vw;
+        margin-bottom: 20px;
+    }
+
+    .socials-icons-button-formatting {
+        height: 26px;
+        width: 40px;
+    }
+
+    .socials-message {
+        font-size: 12px;
+        line-height: 0.5;
+        margin-left: 0vw;
+        margin-top: 6vh;
+        text-align: center;
+    }
+
+    .welcome-message {
+        font-size: 14px;
+        justify-self: center;
+        line-height: 1.5;
+        margin-left: 0vw;
+    }
 }
