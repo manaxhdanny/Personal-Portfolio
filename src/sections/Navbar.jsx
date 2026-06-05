@@ -60,9 +60,10 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="initials-logo" onClick={() => {
                 document.getElementById("introduction").scrollIntoView({ behavior: "smooth", block: "start" });
-                setOpen(!open);
-                setRotated(!rotated);
-                document.body.style.overflow = !open ? "hidden" : "auto";
+                if (open)
+                    setRotated(!rotated);
+                document.body.style.overflow = "auto";
+                setOpen(false);
             }}>
                 <img src={initialsLogo} className="initialsLogo" alt="Initials Logo" />
                 Danny Bao

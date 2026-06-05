@@ -186,11 +186,13 @@
 
     .resume-button {
         align-self: center;
+        appearance: none;
         font-size: 10px;
         height: 30px;
         justify-self: center;
         margin-left: 0vw;
         width: 144px;
+        -webkit-appearance: none;
     }
 
     .self-image {
