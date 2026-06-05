@@ -155,7 +155,9 @@
     }
 
     .intro-text {
+        align-items: center;
         flex: 1;
+        justify-content: center;
         margin-top: 0vh;
     }
 
@@ -182,6 +184,7 @@
     }
 
     .resume-button {
+        align-self: center;
         font-size: 10px;
         height: 30px;
         justify-self: center;
@@ -223,5 +226,6 @@
         justify-self: center;
         line-height: 1.5;
         margin-left: 0vw;
+        text-align: center;
     }
 }
