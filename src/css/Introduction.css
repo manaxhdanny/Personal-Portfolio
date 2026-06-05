@@ -134,11 +134,11 @@
 /* mobile */
 @media (max-width: 600px) {
     .discord-image {
-        width: 18px;
+        width: 20px;
     }
 
     .instagram-image {
-        width: 14px;
+        width: 16px;
     }
 
     .intro-content {
@@ -167,7 +167,7 @@
     .intro-title {
         font-size: 44px;
         justify-self: center;
-        line-height: 0.4em;
+        line-height: 0.45em;
         margin-left: 0vw;
         padding-bottom: 2.5vh;
         padding-top: 0.5vh;
@@ -175,7 +175,7 @@
     }
 
     .linkedIn-image {
-        width: 23px;
+        width: 28px;
     }
 
     .portrait-wrapper {
@@ -193,7 +193,7 @@
         height: 30px;
         justify-self: center;
         margin-left: 0vw;
-        width: 144px;
+        width: 168px;
         -webkit-appearance: none;
     }
 
@@ -209,17 +209,18 @@
         display: flex;
         gap: 12px;
         justify-content: center;
-        margin-left: 0vw;
         margin-bottom: 20px;
+        margin-left: 0vw;
+        margin-top: -4px;
     }
 
     .socials-icons-button-formatting {
-        height: 26px;
-        width: 40px;
+        height: 28px;
+        width: 48px;
     }
 
     .socials-message {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 0.5;
         margin-left: 0vw;
         margin-top: 6vh;
@@ -227,7 +228,7 @@
     }
 
     .welcome-message {
-        font-size: 14px;
+        font-size: 15px;
         justify-self: center;
         line-height: 1.5;
         margin-left: 0vw;
