@@ -155,9 +155,10 @@
     }
 
     .intro-text {
+        display: flex;
         align-self: center;
         align-items: center;
-        flex: 1;
+        flex-direction: column;
         justify-content: center;
         margin-top: 0vh;
     }
