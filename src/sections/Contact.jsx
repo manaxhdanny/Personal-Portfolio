@@ -48,25 +48,25 @@ const Contact = () => {
                 <div className="contact-btn-wrapper">
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={discordRedirect}>
-                            <img src={discordIcon} className="discord-img" style={{ width: '1.7vw' }} alt="Discord Icon" />
+                            <img src={discordIcon} className="discord-img" alt="Discord Icon" />
                         </button>
                         Discord
                     </div>
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={githubRedirect}>
-                            <img src={githubIcon} className="github-img" style={{ width: '2.2vw' }} alt="GitHub Icon" />
+                            <img src={githubIcon} className="github-img" alt="GitHub Icon" />
                         </button>
                         GitHub
                     </div>
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={instagramRedirect}>
-                            <img src={instagramIcon} className="instagram-img" style={{ width: '1.4vw' }} alt="Instagram Icon" />
+                            <img src={instagramIcon} className="instagram-img" alt="Instagram Icon" />
                         </button>
                         Instagram
                     </div>
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={linkedInRedirect}>
-                            <img src={linkedInIcon} className="linkedIn-img" style={{ width: '2.3vw' }} alt="LinkedIn Icon" />
+                            <img src={linkedInIcon} className="linkedIn-img" alt="LinkedIn Icon" />
                         </button>
                         LinkedIn
                     </div>

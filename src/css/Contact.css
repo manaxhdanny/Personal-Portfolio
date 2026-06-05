@@ -133,6 +133,14 @@
     position: relative;
 }
 
+.discord-img {
+    width: 1.7vw;
+}
+
+.github-img {
+    width: 2.2vw;
+}
+
 .hover-box {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 6px;
@@ -162,4 +170,97 @@
                  0 0 20px rgba(255, 255, 255, 0.4),
                  0 0 40px rgba(255, 255, 255, 0.2);
     text-underline-offset: 0.4vh;
+}
+
+.instagram-img { 
+    width: 1.4vw;
+}
+
+.linkedIn-img {
+    width: 2.3vw;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .contact-btn {
+        height: 30px;
+        margin-right: 10px;
+        width: 40px;
+    }
+
+    .contact-btn-rows {
+        font-size: 12px;
+    }
+
+    .contact-btn-wrapper {
+        flex-direction: column;
+        padding-top: 1.5vh;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+    }
+
+    .contact-footer {
+        font-size: 10px;
+        margin-top: 2px;
+        margin-bottom: 16px;
+    }
+
+    .contact-footer-btn {
+        font-size: 9px;
+        height: 23px;
+        width: 70px;
+    }
+
+    .contact-footer-btn-row {
+        margin-top: 2vh;
+    }
+
+    .contact-info {
+        flex: 0 0 100%;
+        padding-top: 0vh;
+    }
+
+    .contact-message {
+        font-size: 12px;
+    }
+
+    .contact-title {
+        padding-top: 10vh;
+    }
+
+    .contact-title-1, .contact-title-2 {
+        font-size: 70px;
+        padding: 0 20px;
+    }
+
+    .contact-title-email {
+        font-size: 14px;
+        margin-top: 3vh;
+        width: 95%;
+    }
+
+    .discord-img {
+        width: 16px;
+    }
+
+    .github-img {
+        width: 22px;
+    }
+
+    .hover-box:hover + .my-email {
+        text-decoration: none;
+        text-shadow: none;
+    }
+
+    .instagram-img {
+        width: 14px;
+    }
+
+     .linkedIn-img {
+        width: 22px;
+     }
 }

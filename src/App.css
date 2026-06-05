@@ -38,4 +38,9 @@
   .intro-section {
     min-height: fit-content;
   }
+
+  .contact-section {
+    height: auto;
+    min-height: auto;
+  }
 }
