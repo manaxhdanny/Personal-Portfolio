@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const Introduction = () => {
     const resumeRedirect = () => {
-        window.open("https://1drv.ms/b/c/C15BCB72315D9978/IQDkbt51u8h2QpIPalOM4gIUAcF3dm2F-kLqAj7zVCtoMT8?e=ywipcK", "_blank", "noopener,noreferrer");
+        window.open("https://1drv.ms/b/c/C15BCB72315D9978/IQAFUos1FgcJS5O87aa7hdKdAaIp4YyFkWYMhvflwPxPF9s?e=qq2zzd", "_blank", "noopener,noreferrer");
     };
     const discordRedirect = () => {
         window.open("https://discord.com/users/373338698139303936", "_blank", "noopener,noreferrer");
