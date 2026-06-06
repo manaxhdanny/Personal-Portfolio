@@ -180,6 +180,7 @@
         padding-bottom: 2.5vh;
         padding-top: 0.5vh;
         text-align: center;
+        text-shadow: 0 2px 2px brown, 0 5px 5px darkred;
     }
 
     .linkedIn-image {
