@@ -204,6 +204,7 @@
 
     .contact-btn-wrapper {
         flex-direction: column;
+        gap: 0.35rem;
         padding-top: 1.5vh;
     }
     
