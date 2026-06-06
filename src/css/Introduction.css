@@ -155,6 +155,7 @@
     .intro-job-role {
         font-size: 23px;
         line-height: 1.45;
+        text-shadow: 0 2px 2px sienna, 0 5px 5px darkred;
     }
 
     .intro-location {

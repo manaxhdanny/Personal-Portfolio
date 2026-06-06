@@ -22,7 +22,7 @@ const TextToType = ({ text, trigger, onDone, cursorMode = "blink" }) => {
                 setDone(true);
                 onDone && onDone();
             }
-        }, 60);
+        }, 70);
 
         return () => clearInterval(interval);
     }, [text, trigger, onDone]);
