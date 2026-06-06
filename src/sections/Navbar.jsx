@@ -23,22 +23,22 @@ const Navbar = () => {
         });
 
         const observer = new IntersectionObserver(
-        entries => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.id;
+            entries => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
 
-                navButtons.forEach(btn => btn.classList.remove("active"));
+                    navButtons.forEach(btn => btn.classList.remove("active"));
 
-                const activeBtn = document.querySelector(
-                `.nav-btn[data-target="${id}"]`
-                );
+                    const activeBtn = document.querySelector(
+                    `.nav-btn[data-target="${id}"]`
+                    );
 
-                if (activeBtn) activeBtn.classList.add("active");
-            }
-            });
-        },
-        { rootMargin: "-60% 0px -60% 0px", threshold: 0 } // 40% of section must be visible
+                    if (activeBtn) activeBtn.classList.add("active");
+                }
+                });
+            },
+            { rootMargin: "-60% 0px -60% 0px", threshold: 0 } // 40% of section must be visible
         );
 
         sections.forEach(section => observer.observe(section));

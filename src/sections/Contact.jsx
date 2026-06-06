@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contact-info">
-                <div className="contact-message">Feel free to contact me through any of the platforms below if you have any questions or concerns.</div>
+                <div className="contact-message"><span className="top-align">Feel free to contact me through</span> any of the platforms below if you have any questions or concerns.</div>
                 <div className="contact-btn-wrapper">
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={discordRedirect}>
@@ -72,12 +72,14 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="contact-footer-btn-row">
-                <button className="contact-footer-btn" onClick={resumeRedirect}>Resumé</button>
-                <button className="contact-footer-btn" onClick={githubRedirect}>GitHub</button>
-                <button className="contact-footer-btn" onClick={linkedInRedirect}>LinkedIn</button>
+            <div className="contact-footer-wrapper">
+                <div className="contact-footer-btn-row">
+                    <button className="contact-footer-btn" onClick={resumeRedirect}>Resumé</button>
+                    <button className="contact-footer-btn" onClick={githubRedirect}>GitHub</button>
+                    <button className="contact-footer-btn" onClick={linkedInRedirect}>LinkedIn</button>
+                </div>
+                <div className="contact-footer">© 2026 Danny Bao. All rights reserved.</div>
             </div>
-            <div className="contact-footer">© 2026 Danny Bao. All rights reserved.</div>
         </div>
     );
 };

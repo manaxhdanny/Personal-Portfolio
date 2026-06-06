@@ -10,7 +10,7 @@
     font-family: var(--main-font);
     font-size: 1.1vw;
     font-weight: 500;
-    height: 40px;
+    height: 2.6vw;
     justify-content: center;
     margin-right: 1vw;
     width: 4vw;
@@ -33,25 +33,25 @@
 .contact-btn-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 3.3vh 5vw;
+    gap: 0.85vw;
+    padding: 1.6vw 5vw;
 }
 
 .contact-content {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
+    padding-top: 100px;
 }
 
 .contact-footer {
-    align-items: flex-end;
     display: flex;
-    flex: 0 0 100%;
     font-family: var(--main-font);
     font-size: 1.25vw;
-    height: 6vh;
+    height: fit-content;
     justify-content: center;
+    margin-bottom: 2vw;
+    width: 100vw;
 }
 
 .contact-footer-btn {
@@ -63,7 +63,7 @@
     font-family: var(--main-font);
     font-size: 1vw;
     font-weight: 500;
-    height: 35px;
+    height: 2.3vw;
     width: 9vw;
 }
 
@@ -75,18 +75,22 @@
 }
 
 .contact-footer-btn-row {
-    align-items: flex-end;
     display: flex;
-    flex: 0 0 100%;
     flex-direction: row;
     gap: 0.75rem;
+    height: fit-content;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 8vw;
+    margin-bottom: 1vw;
+    width: 100vw;
+}
+
+.contact-footer-wrapper {
+    height: fit-content;
 }
 
 .contact-info {
     flex: 0 0 40%;
-    padding-top: 14vh;
 }
 
 .contact-message {
@@ -94,14 +98,13 @@
     font-size: 1.75vw;
     font-weight: 500;
     padding: 0 5vw;
-    padding-top: 3vh;
+    padding-top: 0vh;
     line-height: 1.25;
     text-align: left;
 }
 
 .contact-title {
     flex: 0 0 60%;
-    padding-top: 14vh;
 }
 
 .contact-title-1 {
@@ -180,8 +183,14 @@
     width: 2.3vw;
 }
 
+.top-align {
+    display: inline-block;
+    height: 1.75vw;
+    line-height: 3;
+}
+
 /* mobile */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .contact-btn {
         box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
         height: 30px;
@@ -202,6 +211,7 @@
         flex-direction: column;
         height: auto;
         min-height: auto;
+        padding-top: 0px;
     }
 
     .contact-footer {
@@ -218,6 +228,7 @@
 
     .contact-footer-btn-row {
         margin-top: 2vh;
+        margin-bottom: 0vw;
     }
 
     .contact-info {
@@ -227,6 +238,7 @@
 
     .contact-message {
         font-size: 12px;
+        padding-top: 3vh;
     }
 
     .contact-title {
@@ -268,5 +280,11 @@
 
     .linkedIn-img {
         width: 22px;
+    }
+
+    .top-align {
+        display: inline-block;
+        height: 12px;
+        line-height: 1.25;
     }
 }

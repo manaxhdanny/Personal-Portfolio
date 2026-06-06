@@ -1,9 +1,9 @@
 .discord-image {
-    width: 1.68vw;
+    width: 1.85vw;
 }
 
 .instagram-image {
-    width: 1.3vw;
+    width: 1.4vw;
 }
 
 .intro-content {
@@ -16,14 +16,14 @@
     color: #FFFF33;
     font-family: "Speedy";
     font-size: 2.6vw;
-    line-height: 1.1em;
+    line-height: 1.2em;
     text-shadow: 0 2px 2px sienna, 0 6px 6px darkred;
 }
 
 .intro-location {
     color: white;
     font-family: "Speedy";
-    font-size: 1.7vw;
+    font-size: 1.85vw;
     text-shadow: 0 3px 3px #660000, 0 6px 6px #660000;
     -webkit-text-stroke: 0.5px #660000;
 }
@@ -31,7 +31,7 @@
 .intro-text {
     align-self: flex-start;
     font-family: var(--secondary-font);
-    margin-top: 20vh;
+    margin-top: 100px;
     max-height: 100%;
     text-align: left;
     width: 100%;
@@ -41,21 +41,24 @@
     color: orange;
     font-family: "Astro";
     font-size: 5.2vw;
-    line-height: 0.33em;
+    line-height: 2vw;
     margin-left: 8vw;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+    margin-top: -0.5vw;
+    padding-bottom: 2.45vw;
+    padding-top: 0;
     text-shadow: 0 2px 2px brown, 0 8px 8px darkred;
-    -webkit-text-stroke: 0.5px orangered;
+    -webkit-text-stroke: 0.5px maroon;
 }
 
 .linkedIn-image {
-    width: 2.3vw;
+    width: 2.5vw;
 }
 
 .portrait-wrapper {
-    display: grid;
-    position: relative;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5vw;
     width: 100%;
 }
 
@@ -69,11 +72,11 @@
     cursor: pointer;
     display: flex;
     font-family: var(--main-font);
-    font-size: 0.9vw;
-    height: 40px;
+    font-size: 1vw;
+    height: 2.65vw;
     justify-content: center;
     margin-left: 8vw;
-    width: 14.7vw;
+    width: 15.7vw;
 }
 
 .resume-button:hover {
@@ -84,18 +87,13 @@
 }
 
 .self-image {
-    grid-area: 1 / 1;
-    left: 50%;
-    max-width: 75%;
-    object-fit: contain;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -46%);
+    height: 35vw;
+    max-width: 35vw;
 }
 
 .socials-icons {
     display: flex;
-    gap: 15px;
+    gap: 1vw;
     margin-left: 8vw;
 }
 
@@ -107,9 +105,9 @@
     box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.8);
     cursor: pointer;
     display: flex;
-    height: 35px;
+    height: 2.5vw;
     justify-content: center;
-    width: 4.26vw;
+    width: 4.55vw;
 }
 
 .socials-icons-button-formatting:hover {
@@ -118,17 +116,24 @@
 
 .socials-message {
     font-family: "Speedy";
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     line-height: 0;
     margin-left: 8vw;
-    margin-top: 13vh;
+    margin-top: 6.25vw;
 }
 
 .welcome-message {
     font-family: 'Speedy';
-    font-size: 1.3vw;
+    font-size: 1.45vw;
     line-height: 0;
     margin-left: 8vw;
+}
+
+/* small desktop */
+@media (max-width: 1280px) {
+    .intro-content {
+        margin-bottom: 100px;
+    }
 }
 
 /* mobile */
@@ -144,6 +149,7 @@
     .intro-content {
         display: flex;
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
     .intro-job-role {
@@ -170,6 +176,7 @@
         justify-self: center;
         line-height: 0.4em;
         margin-left: 0vw;
+        margin-top: -3.5vw;
         padding-bottom: 2.5vh;
         padding-top: 0.5vh;
         text-align: center;
@@ -183,6 +190,7 @@
         display: flex;
         flex: 0 0 auto;
         justify-content: center;
+        margin-top: 0vw;
         padding-top: 70px;
         width: 100%;
     }
@@ -199,11 +207,8 @@
     }
 
     .self-image {
-        left: 0%;
-        max-width: 70%;
-        position: static;
-        top: 0%;
-        transform: translate(0%, 0%);
+        height: 265px;
+        max-width: 265px;
     }
 
     .socials-icons {
