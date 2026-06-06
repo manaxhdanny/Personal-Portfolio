@@ -31,7 +31,7 @@
 .intro-text {
     align-self: flex-start;
     font-family: var(--secondary-font);
-    margin-top: 100px;
+    margin-top: 110px;
     max-height: 100%;
     text-align: left;
     width: 100%;
@@ -43,7 +43,7 @@
     font-size: 5.2vw;
     line-height: 2vw;
     margin-left: 8vw;
-    margin-top: -0.5vw;
+    margin-top: 2vw;
     padding-bottom: 2.45vw;
     padding-top: 0;
     text-shadow: 0 2px 2px brown, 0 8px 8px darkred;
@@ -176,7 +176,7 @@
         justify-self: center;
         line-height: 0.4em;
         margin-left: 0vw;
-        margin-top: -3.5vw;
+        margin-top: -3.75vw;
         padding-bottom: 2.5vh;
         padding-top: 0.5vh;
         text-align: center;

@@ -49,17 +49,17 @@ const Introduction = () => {
     return (
         <div>
             {isMobile ? (
-                <div className="intro-content" ref={introRef}>
+                <div className="intro-content">
                     <div className="portrait-wrapper">
                         <img src={selfPortrait} className="self-image" alt="Self Portrait" />
                     </div>
                     <div className="intro-text">
-                        <h5 className="welcome-message" ref={startTextRef}>
-                            <TextToType text="HELLO THERE, MY NAME IS" trigger={trigger} onDone={() => setTypedDone(true)} cursorMode="hide" />
+                        <h5 className="welcome-message">
+                            HELLO THERE, MY NAME IS
                         </h5>
-                        <div className="intro-title">
+                        <div className="intro-title" ref={introRef}>
                             <span>
-                                <TextToType text="DANNY BAO" trigger={typedDone} cursorMode="blink" />    
+                                <TextToType text="DANNY BAO" trigger={trigger} cursorMode="blink" />    
                             </span><br/>
                             <span className="intro-job-role">Software&nbsp;Developer</span><br/>
                             <span className="intro-location">Based in DALLAS, TX</span>
@@ -82,14 +82,14 @@ const Introduction = () => {
                     </div>
                 </div>
             ) : (
-                <div className="intro-content" ref={introRef}>
+                <div className="intro-content">
                     <div className="intro-text">
-                        <h5 className="welcome-message" ref={startTextRef}>
-                            <TextToType text="HELLO THERE, MY NAME IS" trigger={trigger} onDone={() => setTypedDone(true)} cursorMode="hide" />
+                        <h5 className="welcome-message">
+                            HELLO THERE, MY NAME IS
                         </h5>
-                        <div className="intro-title">
+                        <div className="intro-title" ref={introRef}>
                             <span>
-                                <TextToType text="DANNY BAO" trigger={typedDone} cursorMode="blink" />
+                                <TextToType text="DANNY BAO" trigger={trigger} cursorMode="blink" />
                             </span><br></br>
                             <span className="intro-job-role">Software&nbsp;Developer</span><br></br>
                             <span className="intro-location">Based in DALLAS, TX</span>
