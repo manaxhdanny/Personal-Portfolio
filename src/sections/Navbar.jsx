@@ -53,7 +53,7 @@ const Navbar = () => {
         window.open("https://www.linkedin.com/in/dannybao/", "_blank", "noopener,noreferrer");
     };
     const resumeRedirect = () => {
-        window.open("https://1drv.ms/b/c/C15BCB72315D9978/IQAFUos1FgcJS5O87aa7hdKdAaIp4YyFkWYMhvflwPxPF9s?e=qq2zzd", "_blank", "noopener,noreferrer");
+        window.open("https://1drv.ms/b/c/C15BCB72315D9978/IQBxbetMhe8ZSboCojqH5Y1OAU0w-MTrwn14ddOca8pbaWM?e=SGUfgf", "_blank", "noopener,noreferrer");
     };
 
     return (
