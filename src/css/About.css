@@ -2,7 +2,7 @@
     align-items: stretch;
     background-color: black;
     display: flex;
-    min-height: 100vh;
+    min-height: fit-content;
     overflow: hidden;
     width: 99vw;
 }
@@ -15,7 +15,7 @@
 
 .about-img-wrapper {
     flex: 1;
-    height: 100vh;
+    height: 48vw;
     overflow: hidden;
     position: relative;
 }
@@ -29,7 +29,8 @@
     font-family: var(--main-font);
     font-size: 1.04vw;
     font-weight: 400;
-    margin-top: 4vh;
+    line-height: 1.7vw;
+    margin-top: 1.95vw;
     text-align: left;
 }
 
@@ -37,7 +38,7 @@
     font-family: var(--main-font);
     font-size: 1.55vw;
     font-weight: 600;
-    margin-top: 10vh;
+    margin-top: 4.8vw;
     text-align: left;
 }
 
@@ -46,7 +47,7 @@
     display: block;
     font-family: "Speedy";
     font-size: 6vw;
-    padding-top: 18vh;
+    padding-top: 8.65vw;
     position: relative;
     text-align: left;
     width: fit-content;
@@ -55,9 +56,9 @@
 
 .about-title::after {
     background-image: linear-gradient(to right, orange, darkred);
-    bottom: -40px;
+    bottom: -2.62vw;
     content: "";
-    height: 2px;
+    height: 0.15vw;
     left: 0;
     position: absolute;
     width: 60vw; /* extend into the image column */
@@ -65,11 +66,27 @@
 }
 
 .pg-break {
-    margin-top: 3vh;
+    margin-top: 1.4vw;
+}
+
+@media (max-width: 902px) {
+    .about-img-wrapper {
+        height: 55vw;
+    }
+}
+
+@media (max-width: 787px) {
+    .about-content {
+        min-height: 72vw;
+    }
 }
 
 /* mobile */
 @media (max-width: 600px) {
+    .about-content {
+        min-height: 100vh;
+    }
+
     .about-dash {
         justify-self: center;
         background-image: linear-gradient(to right, orange, darkred);

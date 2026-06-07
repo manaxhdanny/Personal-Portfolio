@@ -71,9 +71,10 @@
 .navbar {
     align-items: center;
     display: flex;
-    height: 80px;
+    height: fit-content;
     justify-content: center;
     position: relative;
+    margin-top: 2.65vw;
     width: 100vw;
 }
 

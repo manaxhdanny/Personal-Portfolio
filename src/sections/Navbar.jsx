@@ -75,8 +75,12 @@ const Navbar = () => {
                 <button className="nav-btn" data-target="projects">
                     Projects
                 </button>
-                <button className="nav-btn" data-target="about">About</button>
-                <button className="nav-btn" data-target="contact">Contact</button>
+                <button className="nav-btn" data-target="about">
+                    About
+                </button>
+                <button className="nav-btn" data-target="contact">
+                    Contact
+                </button>
             </div>
             <div className="navbar-socials-wrapper">
                 <button className="navbar-socials" onClick={githubRedirect}>
