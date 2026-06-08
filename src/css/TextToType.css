@@ -29,8 +29,4 @@
     .cursor {
         width: 2px;
     }
-
-    .typing-wrapper {
-        min-height: fit-content;
-    }
 }
