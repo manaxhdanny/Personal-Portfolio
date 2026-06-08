@@ -200,7 +200,7 @@
     .contact-btn {
         background: linear-gradient(180deg, red, rgb(80, 0, 0));
         border: 1px solid rgba(180, 0, 0, 0.4);
-        box-shadow: 0 1px 4px rgb(150, 150, 150);
+        box-shadow: 0 1px 3px rgb(150, 150, 150);
         height: 30px;
         margin-right: 10px;
         width: 40px;
@@ -217,7 +217,7 @@
 
     .contact-btn-wrapper {
         flex-direction: column;
-        gap: 0.35rem;
+        gap: 0.45rem;
         padding-top: 1.5vh;
     }
     
