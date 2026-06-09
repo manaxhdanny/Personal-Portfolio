@@ -207,6 +207,7 @@
         border-radius: 4px;
         box-shadow: 0 1px 3px rgb(150, 150, 150);
         font-size: 10px;
+        font-weight: 400;
         height: 30px;
         justify-content: center;
         width: 110px;
@@ -243,11 +244,12 @@
     .contact-footer-btn {
         font-size: 9px;
         height: 23px;
-        width: 70px;
+        width: 90px;
     }
 
     .contact-footer-btn-row {
-        margin-top: 2vh;
+        gap: 8px;
+        margin-top: 24px;
         margin-bottom: 0vw;
     }
 
