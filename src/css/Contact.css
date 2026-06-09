@@ -1,19 +1,21 @@
 .contact-btn {
     align-items: center;
-    background: linear-gradient(180deg, red, rgb(100, 0, 0));
+    background: linear-gradient(180deg, red, rgb(80, 0, 0));
     border: 1px solid rgba(180, 0, 0, 0.4);
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0px 2px 4px gray;
     color: white;
     cursor: pointer;
     display: flex;
     font-family: var(--main-font);
-    font-size: 1.1vw;
-    font-weight: 500;
-    height: 3vw;
+    font-size: 1.3vw;
+    font-weight: 300;
+    height: 3.45vw;
     justify-content: center;
-    margin-right: 1vw;
-    width: 4.5vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8),
+                 0 0 20px rgba(0, 0, 0, 0.6),
+                 0 0 40px rgba(0, 0, 0, 0.4);
+    width: 14vw;
 }
 
 .contact-btn:hover {
@@ -143,11 +145,13 @@
 }
 
 .discord-img {
+    padding-right: 0.75vw;
     width: 2vw;
 }
 
 .github-img {
-    width: 2.7vw;
+    padding-right: 0.75vw;
+    width: 1.8vw;
 }
 
 .hover-box {
@@ -181,12 +185,14 @@
     text-underline-offset: 0.4vh;
 }
 
-.instagram-img { 
-    width: 1.6vw;
+.instagram-img {
+    padding-right: 0.75vw; 
+    width: 1.75vw;
 }
 
 .linkedIn-img {
-    width: 2.65vw;
+    padding-right: 0.75vw;
+    width: 1.8vw;
 }
 
 .top-align {
@@ -198,12 +204,12 @@
 /* mobile */
 @media (max-width: 600px) {
     .contact-btn {
-        background: linear-gradient(180deg, red, rgb(80, 0, 0));
-        border: 1px solid rgba(180, 0, 0, 0.4);
+        border-radius: 4px;
         box-shadow: 0 1px 3px rgb(150, 150, 150);
+        font-size: 10px;
         height: 30px;
-        margin-right: 10px;
-        width: 40px;
+        justify-content: center;
+        width: 110px;
     }
 
     .contact-btn:hover {
@@ -273,11 +279,13 @@
     }
 
     .discord-img {
-        width: 17.5px;
+        padding-right: 6px;
+        width: 16px;
     }
 
     .github-img {
-        width: 25px;
+        padding-right: 6px;
+        width: 15.5px;
     }
 
     .hover-box {
@@ -290,11 +298,13 @@
     }
 
     .instagram-img {
+        padding-right: 6px;
         width: 15px;
     }
 
     .linkedIn-img {
-        width: 24px;
+        padding-right: 6px;
+        width: 15.5px;
     }
 
     .top-align {

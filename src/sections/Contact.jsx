@@ -49,26 +49,26 @@ const Contact = () => {
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={discordRedirect}>
                             <img src={discordIcon} className="discord-img" alt="Discord Icon" />
+                            Discord&nbsp;&nbsp;
                         </button>
-                        Discord
                     </div>
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={githubRedirect}>
                             <img src={githubIcon} className="github-img" alt="GitHub Icon" />
+                            GitHub&nbsp;&nbsp;
                         </button>
-                        GitHub
                     </div>
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={instagramRedirect}>
                             <img src={instagramIcon} className="instagram-img" alt="Instagram Icon" />
+                            Instagram&nbsp;
                         </button>
-                        Instagram
                     </div>
                     <div className="contact-btn-rows">
                         <button className="contact-btn" onClick={linkedInRedirect}>
                             <img src={linkedInIcon} className="linkedIn-img" alt="LinkedIn Icon" />
+                            LinkedIn&nbsp;
                         </button>
-                        LinkedIn
                     </div>
                 </div>
             </div>
