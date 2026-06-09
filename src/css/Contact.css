@@ -206,11 +206,12 @@
     .contact-btn {
         border-radius: 4px;
         box-shadow: 0 1px 3px rgb(150, 150, 150);
+        flex: 1 1 calc(50% - 0.3rem);
         font-size: 10px;
         font-weight: 400;
         height: 30px;
         justify-content: center;
-        width: 110px;
+        width: calc(45vw - 0.3rem);
     }
 
     .contact-btn:hover {
@@ -223,9 +224,12 @@
     }
 
     .contact-btn-wrapper {
-        flex-direction: column;
-        gap: 0.45rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: left;
         padding-top: 1.5vh;
+        width: 100%;
     }
     
     .contact-content {
