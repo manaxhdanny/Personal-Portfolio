@@ -106,13 +106,16 @@
 @media (max-width: 734px) {
     .skills-dash {
         height: 1px;
-        justify-self: center;
         margin-top: 16px;
         width: 50px;
     }
 
     .skills-section-title {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         font-size: 36px;
+        justify-content: center;
         margin-bottom: 36px;
         padding-top: 12vh;
     }
