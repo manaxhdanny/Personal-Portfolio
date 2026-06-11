@@ -32,6 +32,11 @@
     min-height: 100vh;
 }
 
+.skills-section {
+    height: fit-content;
+    min-height: 100vh;
+}
+
 /* small desktop */
 @media (max-width: 1280px) {
   .intro-section {

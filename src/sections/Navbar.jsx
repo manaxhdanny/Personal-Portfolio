@@ -75,6 +75,9 @@ const Navbar = () => {
                 <button className="nav-btn" data-target="projects">
                     Projects
                 </button>
+                <button className="nav-btn" data-target="skills">
+                    Skills
+                </button>
                 <button className="nav-btn" data-target="about">
                     About
                 </button>
@@ -105,6 +108,13 @@ const Navbar = () => {
                         document.body.style.overflow = !open ? "hidden" : "auto";
                     }}>
                         Projects
+                    </button>
+                    <button className="nav-btn" data-target="skills" onClick={() => {
+                        setOpen(!open);
+                        setRotated(!rotated);
+                        document.body.style.overflow = !open ? "hidden" : "auto";
+                    }}>
+                        Skills
                     </button>
                     <button className="nav-btn" data-target="about" onClick={() => {
                         setOpen(!open);

@@ -12,16 +12,13 @@ const About = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-        ([entry]) => {
-            setTrigger(entry.isIntersecting);
-        },
-        { threshold: 0.4 } // 40% of section must be visible
+            ([entry]) => {
+                setTrigger(entry.isIntersecting);
+            },
+            { threshold: 0.4 } // 40% of section must be visible
         );
 
-        if (aboutRef.current) {
-            observer.observe(aboutRef.current);
-        }
-
+        if (aboutRef.current) observer.observe(aboutRef.current);
         return () => observer.disconnect();
     }, []);
 

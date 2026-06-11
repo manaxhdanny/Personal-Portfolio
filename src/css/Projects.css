@@ -13,6 +13,17 @@
     transform: translateY(-6px);
 }
 
+.project-date {
+    color: #ccc;
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.7;
+    padding: 12px 8px;
+    text-align: left;
+}
+
 .project-desc {
     color: #ccc;
     font-family: var(--main-font);
@@ -37,6 +48,26 @@
     width: 100%;
 }
 
+.project-lang-box {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    border-radius: 4px;
+    color: orange;
+    font-family: var(--main-font);
+    font-size: 14px;
+    padding: 0 7.65px;
+    text-shadow: 0 0 6px black;
+}
+
+.project-lang-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    height: fit-content;
+    margin-bottom: 10px;
+    padding: 0 8px;
+}
+
 .project-title {
     color: white;
     font-family: var(--main-font);
@@ -47,26 +78,15 @@
     text-align: left;
 }
 
-.project-tools-date {
-    color: #ccc;
-    font-family: var(--main-font);
-    font-size: 13px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.7;
-    padding: 12px 8px;
-    text-align: left;
-}
-
 .projects-content {
     background-color: black;
     min-height: 100vh;
 }
 
 .projects-dash {
-    justify-self: center;
     background-color: orangered;
-    height: 2px;
+    height: 1px;
+    justify-self: center;
     margin-top: 24px;
     width: 75px;
 }
@@ -85,7 +105,7 @@
     font-family: var(--main-font);
     font-size: 20px;
     line-height: 0.75;
-    padding-top: 16vh;
+    padding-top: 7.67vw;
 }
 
 .projects-text {
@@ -118,6 +138,11 @@
 
     .project-image {
         height: 120px;
+    }
+
+    .project-lang-box {
+        font-size: 12px;
+        padding: 0 8px;
     }
 
     .projects-content {

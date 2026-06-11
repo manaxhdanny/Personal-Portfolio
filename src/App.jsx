@@ -3,6 +3,7 @@ import Contact from './sections/Contact'
 import Introduction from './sections/Introduction'
 import Navbar from './sections/Navbar'
 import Projects from './sections/Projects'
+import TechnicalSkills from './sections/TechnicalSkills'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import selfPortrait from './assets/selfie.png'
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section className="projects-section" id="projects">
         <Projects />
+      </section>
+      <section className="skills-section" id="skills">
+        <TechnicalSkills />
       </section>
       <section className="about-section" id="about">
         <About />
