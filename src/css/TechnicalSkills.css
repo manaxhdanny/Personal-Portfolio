@@ -106,6 +106,7 @@
 @media (max-width: 734px) {
     .skills-dash {
         height: 1px;
+        justify-self: center;
         margin-top: 16px;
         width: 50px;
     }
