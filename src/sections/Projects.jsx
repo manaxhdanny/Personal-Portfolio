@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 
 const Projects = () => {
@@ -19,7 +20,23 @@ const Projects = () => {
         { id: 5, title: "CIOBrain Graph Database", image: ciobrainLogo, description: "Undergraduate Capstone Project developed for Fellows Consulting Group. This is a web-based graph database application designed to help CIOs track interconnected IT assets, such as applications, databases, and infrastructure, and visualize the relationships between these assets within their IT environment.", languages: ["React", "Node.js"], date: "Feb 2023 - May 2023", url: "https://github.com/CIOBrain/ciobrain-mono.git" },
         { id: 6, title: "Comet Caves Software Requirements Specification Document", image: cometCavesLogo, description: "A 62-page Requirements Specification Document following the Volere process that details the constraints, functional and non-functional requirements, UML scenario flows, use cases, and full wireframes for the Comet Caves system.", languages: ["Requirements Documentation"], date: "Feb 2023 - May 2023", url: "https://1drv.ms/b/c/C15BCB72315D9978/IQCEuJiEcrRkT4NO1mkx-S4UAdZv8TWfnu39g283GYCWkdo?e=NY11c7" }
     ];
+    const projectsRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const [cardHovered, setCardHovered] = useState(-1);
     const isMobile = useMediaQuery({ maxWidth: 734 });
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsVisible(entry.isIntersecting);
+                setCardHovered(-1);
+            },
+            { threshold: 0.2 } // 20% of section must be visible
+        );
+
+        if (projectsRef.current) observer.observe(projectsRef.current);
+        return () => observer.disconnect();
+    }, []);
     
     return (
         <div className="projects-content">
@@ -71,14 +88,22 @@ const Projects = () => {
                     ))}
                 </Swiper>
             ) : (
-                <div className="projects-grid">
-                    {projects.map((p) => (
+                <div className="projects-grid" ref={projectsRef}>
+                    {projects.map((p, index) => (
                         <a
                             key={p.id}
                             href={p.url}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="project-card"
+                            style={{ 
+                                opacity: isVisible ? 1 : 0,
+                                transform: isVisible ? `${cardHovered == p.id ? 'translateY(-6px)' : 'translateY(0)'}` : 'translateY(30px)',
+                                transition: isVisible ? `opacity 0.6s ease-in-out, transform ${cardHovered == -1 ? 0.6 : 0.2}s ease` : "0.6s ease",
+                                transitionDelay: isVisible && cardHovered == -1 ? `${0.2 * index}s` : "0s"
+                            }}
+                            onMouseEnter={() => setCardHovered(p.id)}
+                            onMouseLeave={() => setCardHovered(0)}
                         >
                             <div className="project-image">
                                 <img src={p.image} alt={p.title} />

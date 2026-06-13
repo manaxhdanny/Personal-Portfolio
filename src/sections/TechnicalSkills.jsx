@@ -32,10 +32,10 @@ import vsCodeIcon from '../assets/Technical Skills Icons/VS Code.png'
 
 const TechnicalSkills = () => {
     const skillsList = [
-        { type: "Programming Languages", list: [{ name: "Java", yoe: "1 year", icon: javaIcon }, { name: "Python", yoe: "1 year", icon: pythonIcon }, { name: "JavaScript", yoe: "1 year", icon: javaScriptIcon }, { name: "Kotlin", yoe: "1 year", icon: kotlinIcon }, { name: "SQL", yoe: "1 year", icon: sqlIcon }, { name: "PHP", yoe: "1 year", icon: phpIcon }, { name: "C++", yoe: "1 year", icon: cppIcon }, { name: "C", yoe: "1 year", icon: cIcon }] },
-        { type: "Frontend Development", list: [{ name: "React", yoe: "1 year", icon: reactIcon }, { name: "HTML", yoe: "1 year", icon: htmlIcon }, { name: "CSS", yoe: "1 year", icon: cssIcon }, { name: "Tailwind CSS", yoe: "1 year", icon: tailwindCSSIcon }] },
-        { type: "Backend & Cloud", list: [{ name: "Node.js", yoe: "1 year", icon: nodeJSIcon }, { name: "Firebase", yoe: "1 year", icon: firebaseIcon }] },
-        { type: "Tools & Platforms", list: [{ name: "GitHub", yoe: "1 year", icon: gitHubIcon }, { name: "VS Code", yoe: "1 year", icon: vsCodeIcon }, { name: "Android Studio", yoe: "1 year", icon: androidStudioIcon }, { name: "Unity", yoe: "1 year", icon: unityIcon }] }
+        { type: "Programming Languages", list: [{ name: "Java", yoe: "3 years", icon: javaIcon }, { name: "Python", yoe: "2 years", icon: pythonIcon }, { name: "JavaScript", yoe: "2 years", icon: javaScriptIcon }, { name: "Kotlin", yoe: "6 months", icon: kotlinIcon }, { name: "SQL", yoe: "2 years", icon: sqlIcon }, { name: "PHP", yoe: "6 months", icon: phpIcon }, { name: "C++", yoe: "1 year", icon: cppIcon }, { name: "C", yoe: "6 months", icon: cIcon }] },
+        { type: "Frontend Development", list: [{ name: "React", yoe: "2 years", icon: reactIcon }, { name: "HTML", yoe: "3 years", icon: htmlIcon }, { name: "CSS", yoe: "3 years", icon: cssIcon }, { name: "Tailwind CSS", yoe: "1 year", icon: tailwindCSSIcon }] },
+        { type: "Backend & Cloud", list: [{ name: "Node.js", yoe: "6 months", icon: nodeJSIcon }, { name: "Firebase", yoe: "1 year", icon: firebaseIcon }] },
+        { type: "Tools & Platforms", list: [{ name: "GitHub", yoe: "3 years", icon: gitHubIcon }, { name: "VS Code", yoe: "3 years", icon: vsCodeIcon }, { name: "Android Studio", yoe: "6 months", icon: androidStudioIcon }, { name: "Unity", yoe: "6 months", icon: unityIcon }] }
     ];
     const skillsRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
