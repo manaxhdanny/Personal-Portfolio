@@ -106,6 +106,18 @@
 }
 
 @media (max-width: 734px) {
+    .skills-card {
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    }
+
+    .skills-card-content {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .skills-card-content:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
     .skills-dash {
         height: 1px;
         margin-top: 16px;
