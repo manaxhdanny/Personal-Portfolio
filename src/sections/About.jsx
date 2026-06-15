@@ -39,6 +39,7 @@ const About = () => {
                         </div>
                         <div className="about-me">My name is <span style={{ color: 'orange', fontWeight: 600 }}>Danny Bao</span>.
                             I'm a <span style={{ color: 'gold', fontWeight: 600 }}>Software Developer</span> based in Dallas, TX with a passion to turn complex problems into solutions that bring meaningful value to everyday life.
+                            <div className="pg-break"></div>
                             From a young age, I’ve always been drawn to mathematics and logical problem‑solving, and that foundation is a big part of what fuels my passion for innovation today.
                             I earned both my bachelor’s and master’s degrees in Software Engineering, growing from a first‑generation college student into the first in my family to earn a graduate degree.
                             This journey has shaped my curiosity and persistence, qualities that guide every project I dive into and every challenge I take on.
@@ -56,6 +57,7 @@ const About = () => {
                         </div>
                         <div className="about-me">My name is <span style={{ color: 'orange', fontWeight: 600 }}>Danny Bao</span>.
                             I'm a <span style={{ color: 'gold', fontWeight: 600 }}>Software Developer</span> based in Dallas, TX with a passion to turn complex problems into solutions that bring meaningful value to everyday life.
+                            <div className="pg-break"></div>
                             From a young age, I’ve always been drawn to mathematics and logical problem‑solving, and that foundation is a big part of what fuels my passion for innovation today.
                             I earned both my bachelor’s and master’s degrees in Software Engineering, growing from a first‑generation college student into the first in my family to earn a graduate degree.
                             This journey has shaped my curiosity and persistence, qualities that guide every project I dive into and every challenge I take on.

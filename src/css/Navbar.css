@@ -19,6 +19,12 @@
     transform: translateY(-50%);
 }
 
+.initials-logo:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(60, 60, 60, 0.9);
+}
+
 .initialsLogo {
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 1));
     width: 4.4vw;
