@@ -1,3 +1,53 @@
+/* Define the total width of the vertical scrollbar */
+::-webkit-scrollbar {
+  height: 0;
+  width: 16px;
+}
+
+/* Style the background track (the runway) */
+::-webkit-scrollbar-track {
+  background: white; 
+  border-radius: 0px;
+}
+
+/* Style the draggable handle (the thumb) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(180, 0, 0), rgb(255, 120, 0));
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+/* Change thumb (handle) color when hovering */
+::-webkit-scrollbar-thumb:hover {
+  background: maroon;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+/* Universal styling for both UP/DOWN scrollbar buttons */
+::-webkit-scrollbar-button:single-button {
+  border: 1px solid transparent;
+  display: block;
+  height: 14px;
+}
+
+/* Styling specifically for UP scrollbar arrow */
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url('assets/up-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Styling specifically for DOWN scrollbar arrow */
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url('assets/down-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .about-section {
   height: fit-content;
   min-height: fit-content;
@@ -55,5 +105,9 @@
   .intro-section {
     height: auto;
     min-height: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }

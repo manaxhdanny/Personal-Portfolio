@@ -107,8 +107,12 @@
 }
 
 .projects-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-family: var(--main-font);
     font-size: 48px;
+    justify-content: center;
     margin-bottom: 6vh;
 }
 
@@ -160,11 +164,7 @@
     }
 
     .projects-text {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
         font-size: 36px;
-        justify-content: center;
         line-height: 0.2;
         margin-bottom: 4vh;
     }

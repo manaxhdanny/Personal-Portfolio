@@ -79,9 +79,9 @@
     display: flex;
     height: fit-content;
     justify-content: center;
-    position: relative;
     margin-top: 2.65vw;
-    width: 100vw;
+    position: relative;
+    width: calc(100vw - 16px);
 }
 
 .navbar-socials {
@@ -168,6 +168,10 @@
             padding: 10px 10px;
             width: 40px;
         }
+    }
+
+    .navbar {
+        width: 100vw;
     }
     
     .nav-content, .navbar-socials-wrapper {
