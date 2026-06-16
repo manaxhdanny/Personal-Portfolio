@@ -22,28 +22,36 @@ const Introduction = () => {
     };
     const isMobile = useMediaQuery({ maxWidth: 600 });
     const introRef = useRef(null);
-    const startTextRef = useRef(null);
     const [trigger, setTrigger] = useState(false);
-    const [typedDone, setTypedDone] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-        ([entry]) => {
-            if (entry.isIntersecting) {
-                setTrigger(true);
-            } else {
-                setTrigger(false);
-                setTypedDone(false);
-            }
-        },
-        { threshold: 0.4 } // 40% of section must be visible
+            ([entry]) => {
+                setTrigger(entry.isIntersecting);
+                console.log("trigger is ", entry.isIntersecting);
+            },
+            { threshold: 0.4 } // 40% of section must be visible
         );
 
-        if (introRef.current) {
-            observer.observe(introRef.current);
-        }
+        if (introRef.current) observer.observe(introRef.current);
 
-        return () => observer.disconnect();
+        /* to prevent freezing animation on orientation change / window resize */
+        const handleResize = () => {
+            const isMobile = window.innerWidth <= 600;
+
+            // Re-observe after layout changes
+            observer.disconnect();
+            setTimeout(() => {
+                if (introRef.current) observer.observe(introRef.current);
+            }, 50);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            observer.disconnect();
+        };
     }, []);
 
     return (
@@ -59,7 +67,7 @@ const Introduction = () => {
                         </h5>
                         <div className="intro-title" ref={introRef}>
                             <span>
-                                <TextToType text="DANNY BAO" trigger={trigger} cursorMode="blink" />    
+                                <TextToType text="DANNY BAO" trigger={trigger} />    
                             </span><br/>
                             <span className="intro-job-role">Software&nbsp;Developer</span><br/>
                             <span className="intro-location">Based in DALLAS, TX</span>
@@ -89,7 +97,7 @@ const Introduction = () => {
                         </h5>
                         <div className="intro-title" ref={introRef}>
                             <span>
-                                <TextToType text="DANNY BAO" trigger={trigger} cursorMode="blink" />
+                                <TextToType text="DANNY BAO" trigger={trigger} />
                             </span><br></br>
                             <span className="intro-job-role">Software&nbsp;Developer</span><br></br>
                             <span className="intro-location">Based in DALLAS, TX</span>

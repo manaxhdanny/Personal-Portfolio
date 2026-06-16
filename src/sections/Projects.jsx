@@ -35,7 +35,24 @@ const Projects = () => {
         );
 
         if (projectsRef.current) observer.observe(projectsRef.current);
-        return () => observer.disconnect();
+        
+        /* to prevent freezing animation on orientation change / window resize */
+        const handleResize = () => {
+            const isMobile = window.innerWidth <= 600;
+
+            // Re-observe after layout changes
+            observer.disconnect();
+            setTimeout(() => {
+                if (projectsRef.current) observer.observe(projectsRef.current);
+            }, 50);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            observer.disconnect();
+        };
     }, []);
     
     return (

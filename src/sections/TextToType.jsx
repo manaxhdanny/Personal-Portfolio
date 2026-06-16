@@ -1,7 +1,7 @@
 import "../css/TextToType.css";
 import { useState, useEffect } from "react";
 
-const TextToType = ({ text, trigger, onDone, cursorMode = "blink" }) => {
+const TextToType = ({ text, trigger, cursorMode = "blink" }) => {
     const [display, setDisplay] = useState("");
     const [done, setDone] = useState(false);
 
@@ -20,22 +20,17 @@ const TextToType = ({ text, trigger, onDone, cursorMode = "blink" }) => {
             if (i > text.length) {
                 clearInterval(interval);
                 setDone(true);
-                onDone && onDone();
             }
         }, 70);
 
         return () => clearInterval(interval);
-    }, [text, trigger, onDone]);
+    }, [text, trigger]);
 
     return (
         <div className="typing-wrapper">
             {display}
             {trigger && cursorMode === "blink" && (
                 <span className={`cursor ${done ? "blink" : ""}`}></span>
-            )}
-
-            {trigger && cursorMode === "hide" && !done && (
-                <span className="cursor"></span>
             )}
         </div>
     );
