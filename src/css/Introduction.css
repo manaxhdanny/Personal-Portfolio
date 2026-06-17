@@ -50,7 +50,7 @@
     margin-top: 2.5vw;
     padding-bottom: 2vw;
     padding-top: 0;
-    text-shadow: 0 6px 1px maroon, 6px 0 1px orangered;
+    text-shadow: 0 0.38vw 1px maroon, 0.38vw 0 1px orangered;
     -webkit-text-stroke: 0.5px black;
 }
 
